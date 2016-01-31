@@ -11,7 +11,7 @@ public class MyFirstVerticle extends AbstractVerticle {
     int port = 8080;
     String portString = System.getenv("PORT");
     if (portString != null) {
-      port = Integer.parseInt(portString);
+      port = Integer.parseInt(portString) ;
     }
     vertx
         .createHttpServer()
